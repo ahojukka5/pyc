@@ -16,3 +16,7 @@ flake8 = "^3.8.4"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+pyc = "pyc.cli:compile"
+python-pyc = "pyc.cli:compile_and_run"
